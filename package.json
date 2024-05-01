@@ -1,11 +1,13 @@
 {
   "name": "quickstart",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "scripts": {
     "lint": "biome check --error-on-warnings --apply .",
+    "prebuild": "bun run lint",
+    "build": "bun build --compile --minify --sourcemap src/index.ts --outfile runapp",
     "prestart": "bun run lint",
-    "start": "bun index.ts"
+    "start": "bun src/index.ts"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.2",

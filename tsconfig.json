@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "exclude": ["node_modules", "build", "dist", "out"],
     // Enable latest features
     "lib": ["ESNext", "DOM"],
     "target": "ESNext",

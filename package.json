@@ -3,11 +3,13 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf dist build out",
     "prelint": "bun run clean",
     "lint": "biome check --error-on-warnings --apply .",
     "prebuild": "bun run lint",
-    "build": "bun build --compile --minify --sourcemap src/index.ts --outfile dist/runapp",
+    "build": "bun build src/index.ts --outdir build --minify",
+    "preexe": "bun run build",
+    "exe": "bun build --compile --minify --sourcemap src/index.ts --outfile dist/app",
     "prestart": "bun run lint",
     "start": "bun src/index.ts"
   },

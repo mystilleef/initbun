@@ -1,0 +1,22 @@
+{
+  "name": "quickstart",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "lint": "biome check --error-on-warnings --apply ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.2",
+    "@eslint/js": "^9.1.1",
+    "@types/bun": "latest",
+    "@types/figlet": "^1.5.8",
+    "eslint": "^9.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "figlet": "^1.7.0"
+  }
+}

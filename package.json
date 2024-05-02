@@ -29,7 +29,5 @@
   "dependencies": {
     "figlet": "^1.7.0"
   },
-  "trustedDependencies": [
-    "@biomejs/biome"
-  ]
+  "trustedDependencies": ["@biomejs/biome"]
 }

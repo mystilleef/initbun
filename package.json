@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf dist build out",
     "prelint": "bun run clean",
-    "lint": "biome check --error-on-warnings --apply .",
+    "lint": "biome check --error-on-warnings --apply-unsafe .",
     "prebuild": "bun run lint",
     "build": "bun build src/index.ts --outdir build --minify",
     "preexe": "bun run build",

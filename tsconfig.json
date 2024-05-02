@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
+    "types": ["@types/bun"],
     "exclude": ["node_modules", "build", "dist", "out"],
-    "lib": ["ESNext", "DOM"],
-    "target": "ESNext",
-    "module": "ESNext",
+    "lib": ["esnext", "webworker", "dom"],
+    "target": "esnext",
+    "module": "esnext",
     "moduleDetection": "force",
     "jsx": "react-jsx",
     "allowJs": true,

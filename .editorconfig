@@ -1,0 +1,24 @@
+root = true
+
+[*]
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+indent_size = 2
+max_line_length = 80
+
+[*.sh]
+shell_variant      = posix # like -ln=posix
+binary_next_line   = true  # like -bn
+switch_case_indent = true  # like -ci
+space_redirects    = true  # like -sr
+keep_padding       = true  # like -kp
+function_next_line = false # like -fn
+
+[*.py]
+indent_size = 4
+
+[*.{md,txt}]
+max_line_length = 60

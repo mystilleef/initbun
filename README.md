@@ -1,15 +1,24 @@
-# initbun
+# Template for a bun project
 
-To install dependencies:
+This repository scaffolds a template project for `Bun`.
 
-```bash
-bun install
-```
-
-To run:
+## Usage
 
 ```bash
-bun run index.ts
+bun create mystilleef/initbun project-name
 ```
 
-This project was created using `bun init` in bun v1.1.6. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## Run project
+
+```bash
+cd project-name
+
+bun install   # Install dependencies
+
+bun run start # Run the project
+```
+
+## References
+
+- [Bun](https://bun.sh/)
+- [Bun create](https://bun.sh/docs/cli/create)

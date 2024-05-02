@@ -1,7 +1,6 @@
 # Template for a bun project
 
-This repository scaffolds a template project for a `Bun`
-project.
+This repository scaffolds a template for a `Bun` project.
 
 ## Usage
 
@@ -22,4 +21,4 @@ bun run start # Run the project
 ## References
 
 - [Bun](https://bun.sh/)
-- [Bun create](https://bun.sh/docs/cli/create)
+- [Bun create](https://bun.sh/docs/cli/bun-create)

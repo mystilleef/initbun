@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "out",
     "types": ["@types/bun"],
     "exclude": ["node_modules", "build", "dist", "out"],
     "lib": ["esnext", "webworker", "dom"],

@@ -3,15 +3,17 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
+    "test": "bun test",
     "clean": "rimraf dist build out",
-    "prelint": "bun run clean",
+    "start": "NODE_ENV=production bun src/index.ts",
+    "build": "bun build src/index.ts --outdir out",
+    "dev": "bun build src/index.ts --outdir out --watch",
     "lint": "biome check --error-on-warnings --apply-unsafe .",
+    "prelint": "bun run clean",
+    "predev": "bun run lint",
+    "pretest": "bun run lint",
     "prebuild": "bun run lint",
-    "build": "bun build src/index.ts --outdir build --minify",
-    "preexe": "bun run build",
-    "exe": "bun build --compile --minify --sourcemap src/index.ts --outfile dist/app",
-    "prestart": "bun run lint",
-    "start": "bun src/index.ts"
+    "prestart": "bun run lint"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.2",
@@ -26,5 +28,8 @@
   },
   "dependencies": {
     "figlet": "^1.7.0"
-  }
+  },
+  "trustedDependencies": [
+    "@biomejs/biome"
+  ]
 }

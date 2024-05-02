@@ -1,6 +1,7 @@
 # Template for a bun project
 
-This repository scaffolds a template project for `Bun`.
+This repository scaffolds a template project for a `Bun`
+project.
 
 ## Usage
 

@@ -13,7 +13,8 @@
     "predev": "bun run lint",
     "pretest": "bun run lint",
     "prebuild": "bun run lint",
-    "prestart": "bun run lint"
+    "prestart": "bun run lint",
+    "package": "bunx taze -w"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.2",
